@@ -231,7 +231,6 @@ public class Program
             return false; 
         }
 
-        //values more than 2 for wall vaieties (would probably do it differently for a larger project)
         if (arr[newMove.x, newMove.y] == 1 || arr[newMove.x, newMove.y] > 2)
         {
             //moving into wall
