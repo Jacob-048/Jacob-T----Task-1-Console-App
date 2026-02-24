@@ -77,10 +77,10 @@ public class Program
                 for (int y = 0; y < arr.GetLength(1); y++)
                 {
                     Console.Write(" ");
-                    if (playerPos.x == x && playerPos.y == y) { Console.Write("P"); }
+                    if (playerPos.x == x && playerPos.y == y) { Console.ForegroundColor = ConsoleColor.Red; Console.Write("P"); }
                     else if (arr[x, y] == 0) { Console.Write(" "); }
-                    else if (arr[x, y] == 1) { Console.Write("#"); }
-                    else if (arr[x, y] == 2) { Console.Write("O"); }
+                    else if (arr[x, y] == 1) { Console.ForegroundColor = ConsoleColor.DarkGray; Console.Write("#"); }
+                    else if (arr[x, y] == 2) { Console.ForegroundColor = ConsoleColor.Yellow; Console.Write("O"); }
                 }
                 Console.Write("\n");
             }
